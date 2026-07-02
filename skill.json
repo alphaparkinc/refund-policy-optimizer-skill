@@ -1,0 +1,53 @@
+{
+  "name": "refund-policy-optimizer-skill",
+  "version": "1.0.0",
+  "description": "Analyze refund patterns, score policy strictness vs customer experience, and generate optimized refund policy recommendations for e-commerce stores.",
+  "author": "alphaparkinc",
+  "category": "operations",
+  "tags": [
+    "refunds",
+    "policy",
+    "customer-experience",
+    "e-commerce",
+    "optimization"
+  ],
+  "inputs": {
+    "refund_records": {
+      "type": "array",
+      "description": "List of refund records with amount, reason, days_since_purchase, and approved fields."
+    },
+    "current_policy": {
+      "type": "object",
+      "description": "Current policy settings: return_window_days, restocking_fee_pct, free_returns."
+    },
+    "business_goal": {
+      "type": "string",
+      "enum": [
+        "maximize_retention",
+        "minimize_costs",
+        "balanced"
+      ],
+      "description": "Primary optimization goal."
+    }
+  },
+  "outputs": {
+    "analysis": {
+      "type": "object",
+      "description": "Refund pattern analysis with top reasons, approval rates, and avg amounts."
+    },
+    "policy_score": {
+      "type": "number",
+      "description": "Current policy customer-friendliness score (0-100)."
+    },
+    "optimized_policy": {
+      "type": "object",
+      "description": "Recommended optimized policy settings."
+    },
+    "estimated_impact": {
+      "type": "object",
+      "description": "Projected impact on retention, costs, and conversion."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
