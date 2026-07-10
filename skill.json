@@ -1,5 +1,5 @@
 {
-  "name": "refund-policy-optimizer-skill",
+  "name": "genpark-refund-policy-optimizer-skill",
   "version": "1.0.0",
   "description": "GenPark AI Agent Skill - Analyze refund patterns, score policy strictness vs customer experience, and generate optimized refund policy recommendations for e-commerce stores.",
   "author": "genpark",
