@@ -1,4 +1,4 @@
-# refund-policy-optimizer-skill
+# genpark-refund-policy-optimizer-skill
 
 > **GenPark AI Agent Skill** — Analyze refund patterns and optimize e-commerce refund policies for retention, cost, or balance.
 
